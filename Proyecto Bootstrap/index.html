@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container-fluid bg-success py-5">
+  <div class="container-fluid bg-primary py-5 pb-5">
     <div class="container text-white text-center">
       <h1 class="display-3"><b>Formulario en Bootstrap</b></h1>
       <p class="lead">Utiliza este formulario para dejar tus datos  ,registrarte y brindarte la información que necesitas</p>
@@ -21,18 +21,18 @@
   </div>
   <div class="container py-5">
     <div class="row">
-      <div class="col-6">
-        <form role="form">
+      <div class="col-sm-12 col-md-6">
+        <form role="form" method="post">
           <div class="form-group">
             <label class="lead"for="name">Nombre:</label>
             <input type="name" class="form-control" id="name">
           </div>
           <div class="form-group">
-            <label class="lead"for="email">Email address:</label>
+            <label class="lead"for="email">Email:</label>
             <input type="email" class="form-control" id="email">
           </div>
           <div class="form-group">
-            <label class="lead"for="pwd">Password:</label>
+            <label class="lead"for="pwd">Contraseña:</label>
             <input type="password" class="form-control" id="pwd">
           </div>
           <div class="form-group">
@@ -77,13 +77,12 @@
                  <option value="Ucayali">Ucayali</option>
               </select>
           </div>
-          <div class="checkbox">
-            <label class="lead" ><input  type="checkbox"> Recordarme</label>
-          </div>
-          <button type="submit" class="btn btn-success btn-lg mt-2 ">Registrarme</button>
+          <button type="submit" class="btn btn-primary btn-lg mt-2 ">Registrarme</button>
+          <label  class="lead pl-5 font-size-10" >¿Ya tienes cuenta?</label>
+          <button class="btn btn-primary btn-lg mt-2 float-right"> <a class="text-white" href="login.html">Inicia Sesión</a></button>
         </form>
       </div>
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <img src="img/formulario.jpg" alt="" class="img-thumbnail ">
       </div>
     </div>
