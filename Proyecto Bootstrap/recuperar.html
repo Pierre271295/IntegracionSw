@@ -20,6 +20,32 @@
       <p class="lead">Utiliza este formulario para recuperar tu contraseña o tu nombre de usuario</p>
     </div>
   </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6">
+        <form role="form">
+          <div class="form-group">
+            <label class="lead"for="email">Email:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label class="lead"for="email">Email de recuperación:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label class="lead"for="pwd">Ultima contraseña que recuerdas:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+
+          <div class="g-recaptcha mt-4" data-sitekey="your_site_key"></div>
+
+          <button type="submit" value="Submit" class="btn btn-outline-primary btn-lg mt-4 mr-5">Captcha</button>
+          <button type="submit" class="btn btn-outline-primary btn-lg mt-4 ">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -29,6 +55,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 
