@@ -14,16 +14,95 @@
 
 <body>
 
-  <div class="container-fluid bg-primary py-5">
-    <div class="container text-white text-center">
-      <h1 class="display-3"><b>Formulario en Bootstrap</b></h1>
-      <p class="lead">Utiliza este formulario para recuperar tu contraseña o tu nombre de usuario</p>
-    </div>
+  <div class="container-fluid bg-primary d-none d-md-block d-lg-block">
+    <nav class="navbar navbar-expand-md navbar-primary bg-primary ">
+        <div class="collapse navbar-collapse container ">
+
+
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="#">Nuestras tiendas</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="#">Fonocompras</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="#">Quienes Somos </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="#">Servicio al cliente </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-4 mr-5 my-lg-0">
+            <input class="form-control mr-lg-2 " type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
+            <button type="submit" class="btn btn-primary btn-md rounded px-5">Buscar</button>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-5">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mi cuenta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"  width="40px">
+                <form role="form" class="dropdown ">
+                  <div class="form-group dropdown-item">
+                    <input type="email" class="form-control rounded-pill" placeholder="Email" id="email">
+                  </div>
+                  <div class="form-group dropdown-item">
+                    <input type="password" class="form-control rounded-pill" placeholder="Contraseña"id="pwd">
+                  </div>
+
+                  <div class="form-group dropdown-item">
+                    <label  class="pr-3" ><a href="recuperar.html">¿Haz olvidado tu contraseña?</a></label>
+                    <label  class="" >¿No tienes una cuenta?</label>
+                  </div>
+                  <div class="form-group dropdown-item d-flex justify-content-between ">
+                    <div class="">
+                      <button type="submit" class="btn btn-primary btn-md rounded-pill text-white px-4 ml-4">Iniciar Sesión</button>
+                    </div>
+                    <div class="">
+                      <a href="formulario.html" class="btn btn-primary btn-md rounded-pill text-white px-4">Regístrate aquí</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item active mr-4">
+              <a class="nav-link" href="#">Bolsa <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#">Favoritos</a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#">Órdenes</a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#">Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   </div>
   <div class="container mt-5">
     <div class="row">
       <div class="col-6">
-        <form role="form">
+        <h1 class="mb-2 text-center">¿Perdiste la contraseña?</h1>
+        <h2 class="mb-5 text-center">Registrate aquí!</h1>
+        <form role="form" class="mr-5">
           <div class="form-group">
             <label class="lead"for="email">Email:</label>
             <input type="email" class="form-control" id="email">
@@ -43,6 +122,9 @@
           <button type="submit" class="btn btn-outline-primary btn-lg mt-4 ">Iniciar Sesión</button>
         </form>
       </div>
+      <div class="col-sm-12 col-md-6 text-center">
+        <img src="img/formulario.jpg" alt="" class="img-fluid pt-5 mt-5">
+      </div>
     </div>
   </div>
 
@@ -57,6 +139,43 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
+
+
+
+<footer class="pt-5">
+  <div class="container-fluid bg-dark mt-5 py-5 ">
+    <div class="container py-5 text-center">
+      <div class="row text-white bg-dark justify-content-between">
+        <div class="col-3 ">
+          <h5 class="mb-4">SERVICIO AL CLIENTE</h5>
+          <a href="" class="d-block text-white">Preguntas frecuentes</a>
+          <a href=""class="d-block text-white">Tiempos y costos de envío</a>
+          <a href=""class="d-block text-white">Política de privacidad</a>
+        </div>
+        <div class="col-3 d-block">
+          <h5 class="mb-4">NOSOTROS</h5>
+          <a href=""class="d-block text-white">Nuestra empresa</a>
+          <a href=""class="d-block text-white">Venta empresa</a>
+          <a href=""class="d-block text-white">Proveedores</a>
+          <a href=""class="d-block text-white">Trabaja con nosotros</a>
+          <a href=""class="d-block text-white">Políticas internas</a>
+        </div>
+        <div class="col-3 d-block">
+          <h5 class="mb-4">EMPRESA Y MÁS</h5>
+          <a href=""class="d-block text-white">Banco Tienda</a>
+          <a href=""class="d-block text-white">Seguros Tienda</a>
+          <a href=""class="d-block text-white">Viajes Tienda</a>
+          <a href=""class="d-block text-white">Tiendas y más</a>
+        </div>
+        <div class="col-3 d-block">
+          <h5 class="mb-4">LIBRO DE RECLAMACIONES</h5>
+          <a href=""class="d-block text-white">Ingresa al libro aquí</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
 
 
 </html>
