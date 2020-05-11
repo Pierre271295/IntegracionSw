@@ -8,8 +8,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/all.css" rel="stylesheet">
 
-  <title>Formulario de registro</title>
+  <title>Regístrate</title>
 </head>
 
 <body>
@@ -43,55 +44,54 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar-brand"href="">Nav</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="form-inline my-4 mr-5 my-lg-0">
-            <input class="form-control mr-lg-2 " type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
-            <button type="submit" class="btn btn-primary btn-md rounded">Buscar</button>
-          </form>
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse mr-md-3" id="navbarSupportedContent">
+          <input class="form-control border" type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
+          <button type="submit" class="btn btn-primary btn-md rounded px-3 mr-5"> <i class="fas fa-search"></i> </button>
+          <!-- <button type="submit" ">Buscar</button> -->
+          <ul class="navbar-nav ml-auto text-center align-items-center">
             <li class="nav-item dropdown mr-5">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mi cuenta
+                <i class="fas fa-user-circle"></i> Mi cuenta
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown"  width="40px">
-                <form role="form" class="dropdown ">
-                  <div class="form-group dropdown-item">
-                    <input type="email" class="form-control rounded-pill" placeholder="Email" id="email">
+              <div class="dropdown-menu p-3 mt-3">
+                <form class="px-2 py-3">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Correo Electrónico">
                   </div>
-                  <div class="form-group dropdown-item">
-                    <input type="password" class="form-control rounded-pill" placeholder="Contraseña"id="pwd">
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
                   </div>
-                  <div class="form-group dropdown-item">
-                    <label  class="pr-3" ><a href="recuperar.html">¿Haz olvidado tu contraseña?</a></label>
-                    <label  class="" >¿No tienes una cuenta?</label>
-                  </div>
-                  <div class="form-group dropdown-item d-flex justify-content-between ">
-                    <div class="">
-                      <a type="submit" class="btn btn-primary btn-md rounded-pill text-white px-4 ml-4">Iniciar Sesión</a>
-                    </div>
-                    <div class="">
-                      <a type="submit" class="btn btn-primary btn-md rounded-pill text-white px-4">Regístrate aquí</a>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Recuerdame
+                      </label>
                     </div>
                   </div>
+                  <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
                 </form>
-              </div>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-center" href="formulario.html">¿No tienes cuenta? Regístrate</a>
+                <a class="dropdown-item text-center" href="recuperar.html">¿Olvidaste tu contraseña?</a>
+            </div>
             </li>
-
-            <li class="nav-item active mr-4">
-              <a class="nav-link" href="#">Bolsa <span class="sr-only">(current)</span></a>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i> Bolsa  <span class="sr-only"></span></a>
             </li>
 
             <li class="nav-item mr-4">
-              <a class="nav-link" href="#">Favoritos</a>
+              <a class="nav-link" href="#"> <i class="far fa-heart"></i> Favoritos <span class="sr-only"></span></a>
             </li>
 
             <li class="nav-item mr-4">
-              <a class="nav-link" href="#">Órdenes</a>
+              <a class="nav-link" href="#">  <i class="fas fa-paste"></i> Órdenes <span class="sr-only"></span></a>
             </li>
 
             <li class="nav-item mr-4">
-              <a class="nav-link" href="#">Ayuda</a>
+              <a class="nav-link" href="#"> <i class="fas fa-question-circle"> </i>Ayuda <span class="sr-only"></a>
             </li>
           </ul>
         </div>
@@ -158,7 +158,7 @@
               </select>
           </div>
           <button type="submit" class="btn btn-outline-primary btn-lg mt-2 ">Registrarme</button>
-          <label  class="lead pl-5 font-size-10" >¿Ya tienes cuenta?</label>
+          <label  class="lead ml-4" >¿Ya tienes cuenta?</label>
           <button class="btn btn-primary btn-lg mt-2 float-right"> <a class="text-white" href="login.html">Inicia Sesión</a></button>
         </form>
       </div>
@@ -191,13 +191,13 @@
     <div class="container py-5 text-center">
       <div class="row text-white bg-dark justify-content-between">
         <div class="col-3 ">
-          <h5 class="mb-4">SERVICIO AL CLIENTE</h5>
+          <h6 class="mb-4">SERVICIO AL CLIENTE</h6>
           <a href="" class="d-block text-white">Preguntas frecuentes</a>
           <a href=""class="d-block text-white">Tiempos y costos de envío</a>
           <a href=""class="d-block text-white">Política de privacidad</a>
         </div>
         <div class="col-3 d-block">
-          <h5 class="mb-4">NOSOTROS</h5>
+          <h6 class="mb-4">NOSOTROS</h6>
           <a href=""class="d-block text-white">Nuestra empresa</a>
           <a href=""class="d-block text-white">Venta empresa</a>
           <a href=""class="d-block text-white">Proveedores</a>
@@ -205,14 +205,14 @@
           <a href=""class="d-block text-white">Políticas internas</a>
         </div>
         <div class="col-3 d-block">
-          <h5 class="mb-4">EMPRESA Y MÁS</h5>
+          <h6 class="mb-4">EMPRESA Y MÁS</h6>
           <a href=""class="d-block text-white">Banco Tienda</a>
           <a href=""class="d-block text-white">Seguros Tienda</a>
           <a href=""class="d-block text-white">Viajes Tienda</a>
           <a href=""class="d-block text-white">Tiendas y más</a>
         </div>
         <div class="col-3 d-block">
-          <h5 class="mb-4">LIBRO DE RECLAMACIONES</h5>
+          <h6 class="mb-4">LIBRO DE RECLAMACIONES</h6>
           <a href=""class="d-block text-white">Ingresa al libro aquí</a>
         </div>
       </div>
