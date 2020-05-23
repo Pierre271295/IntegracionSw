@@ -47,10 +47,12 @@
     <a class="navbar-brand"href="">Nav</a>
 
         <div class="collapse navbar-collapse mr-md-3" id="navbarSupportedContent">
-          <input class="form-control border" type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
-          <button type="submit" class="btn btn-primary btn-md rounded px-3 mr-5"> <i class="fas fa-search"></i> </button>
+          <div class="d-flex">
+            <input class="form-control border" type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
+            <button type="submit" class="btn btn-primary btn-md rounded px-3 mr-5"> <i class="fas fa-search"></i> </button>
+          </div>
           <!-- <button type="submit" ">Buscar</button> -->
-          <ul class="navbar-nav ml-auto text-center align-items-center">
+          <ul class="navbar-nav ml-auto text-center align-items-left">
             <li class="nav-item dropdown mr-5">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user-circle"></i> Mi cuenta
@@ -102,7 +104,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h1 class="mb-5">Registrate aquí!</h1>
-        <form role="form" method="post" class="mr-5">
+        <form role="form" method="post" class="m-4">
           <div class="form-group">
             <label class="lead"for="name">Nombre:</label>
             <input type="name" class="form-control" id="name">
@@ -157,13 +159,15 @@
                  <option value="Ucayali">Ucayali</option>
               </select>
           </div>
-          <button type="submit" class="btn btn-outline-primary btn-lg mt-2 ">Registrarme</button>
-          <label  class="lead ml-4" >¿Ya tienes cuenta?</label>
-          <button class="btn btn-primary btn-lg mt-2 float-right"> <a class="text-white" href="login.html">Inicia Sesión</a></button>
+          <div class="d-sm-flex d-md-flex d-lg-flex justify-content-between align-items-center">
+            <button type="submit" class="btn btn-outline-primary btn-md  ">Registrarme</button>
+            <label  class="m-4" >¿Ya tienes cuenta?</label>
+            <button class="btn btn-primary btn-md btn-sm-block "> <a class="text-white" href="login.html">Inicia Sesión</a></button>
+          </div>
         </form>
       </div>
       <div class="col-sm-12 col-md-6 text-center">
-        <img src="img/formulario.jpg" alt="" class="img-fluid pt-5 mt-5">
+        <img src="img/formulario.jpg" alt="" class="img-fluid pt-5">
       </div>
     </div>
   </div>

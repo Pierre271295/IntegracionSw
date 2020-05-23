@@ -47,10 +47,12 @@
     <a class="navbar-brand"href="">Nav</a>
 
         <div class="collapse navbar-collapse mr-md-3" id="navbarSupportedContent">
-          <input class="form-control border" type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
-          <button type="submit" class="btn btn-primary btn-md rounded px-3 mr-5"> <i class="fas fa-search"></i> </button>
+          <div class="d-flex">
+            <input class="form-control border" type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
+            <button type="submit" class="btn btn-primary btn-md rounded px-3 mr-5"> <i class="fas fa-search"></i> </button>
+          </div>
           <!-- <button type="submit" ">Buscar</button> -->
-          <ul class="navbar-nav ml-auto text-center align-items-center">
+          <ul class="navbar-nav ml-auto text-center align-items-left">
             <li class="nav-item dropdown mr-5">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user-circle"></i> Mi cuenta
@@ -99,10 +101,10 @@
   </div>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-6">
+      <div class="col-xs-6 col-sm-12 col-md-6 text-center">
         <h1 class="mb-2 text-center">¿Perdiste la contraseña?</h1>
         <h2 class="mb-5 text-center">Registrate aquí!</h1>
-        <form role="form" class="mr-5">
+        <form role="form" class="m-5">
           <div class="form-group">
             <label class="lead"for="email">Email:</label>
             <input type="email" class="form-control" id="email">
@@ -115,15 +117,12 @@
             <label class="lead"for="pwd">Ultima contraseña que recuerdas:</label>
             <input type="password" class="form-control" id="pwd">
           </div>
+          <button type="submit" value="Submit" class="btn btn-primary btn-block mt-4 mr-5">ENVIAR</button>
 
-          <div class="g-recaptcha mt-4" data-sitekey="your_site_key"></div>
-
-          <button type="submit" value="Submit" class="btn btn-outline-primary btn-lg mt-4 mr-5">Captcha</button>
-          <button type="submit" class="btn btn-outline-primary btn-lg mt-4 ">Iniciar Sesión</button>
         </form>
       </div>
       <div class="col-sm-12 col-md-6 text-center">
-        <img src="img/formulario.jpg" alt="" class="img-fluid pt-5 mt-5">
+        <img src="img/formulario.jpg" alt="" class="img-fluid pt-5 ">
       </div>
     </div>
   </div>
