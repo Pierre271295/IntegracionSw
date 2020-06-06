@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Formulario de registro</title>
+</head>
+
+<body>
+  <div class="container-fluid bg-primary d-none d-md-block d-lg-block">
+    <nav class="navbar navbar-expand-md navbar-primary bg-primary ">
+        <div class="collapse navbar-collapse container">
+
+
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="nuestrastiendas.html">Nuestras tiendas</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="fono.html">Fonocompras</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="quienes.html">Quienes Somos </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mr-4" href="servicio.html">Servicio al cliente </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand"href="index.html">Nav</a>
+
+        <div class="collapse navbar-collapse mr-md-3" id="navbarSupportedContent">
+          <div class="d-flex">
+            <input class="form-control border" type="search" placeholder="¿Que producto estas buscando?" aria-label="Search" >
+            <button type="submit" class="btn btn-primary btn-md rounded px-3 mr-5"> <i class="fas fa-search"></i> </button>
+          </div>
+          <!-- <button type="submit" ">Buscar</button> -->
+          <ul class="navbar-nav ml-auto text-center align-items-left">
+            <li class="nav-item dropdown mr-5">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle"></i> Mi cuenta
+              </a>
+              <div class="dropdown-menu p-3 mt-3">
+                <form class="px-2 py-3">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Correo Electrónico">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Recuerdame
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-center" href="formulario.html">¿No tienes cuenta? Regístrate</a>
+                <a class="dropdown-item text-center" href="recuperar.html">¿Olvidaste tu contraseña?</a>
+            </div>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i> Bolsa  <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"> <i class="far fa-heart"></i> Favoritos <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#">  <i class="fas fa-paste"></i> Órdenes <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"> <i class="fas fa-question-circle"> </i>Ayuda <span class="sr-only"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+
+  <div class="container mt-3">
+    <img class="img-fluid" src="img/sponsor.png" alt="">
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Marca
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div><input type="checkbox" name="marca" value="">  <span>HP</span></div>
+                <div><input type="checkbox" name="marca" value="">  <span>Asus</span></div>
+                <div><input type="checkbox" name="marca" value="">  <span>Lenovo</span></div>
+                <div><input type="checkbox" name="marca" value="">  <span>Dell</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Precio
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body d-flex flex-column">
+                <div><input type="checkbox" name="" value="">  <span>500 - 800</span></div>
+                <div><input type="checkbox" name="" value="">  <span>800 - 1200</span></div>
+                <div><input type="checkbox" name="" value="">  <span>1200 - 1500</span></div>
+                <div><input type="checkbox" name="" value="">  <span>1500 - 1900</span></div>
+                <div><input type="checkbox" name="" value="">  <span>1900 - 2400</span></div>
+                <div><input type="checkbox" name="" value="">  <span>2400 - 3000</span></div>
+                <div><input type="checkbox" name="" value="">  <span>3000 - más</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Procesador
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div><input type="checkbox" name="" value="">  <span>Core i3</span></div>
+                <div><input type="checkbox" name="" value="">  <span>Core i5</span></div>
+                <div><input type="checkbox" name="" value="">  <span>Core i7</span></div>
+                <div><input type="checkbox" name="" value="">  <span>Core i9</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Memoria RAM
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div><input type="checkbox" name="" value="">  <span>4 GB RAM</span></div>
+                <div><input type="checkbox" name="" value="">  <span>8 GB RAM</span></div>
+                <div><input type="checkbox" name="" value="">  <span>16 GB RAM</span></div>
+                <div><input type="checkbox" name="" value="">  <span>32 GB RAM</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Disco Duro
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div><input type="checkbox" name="" value="">  <span>DD 250 GB</span></div>
+                <div><input type="checkbox" name="" value="">  <span>DD 250 GB</span></div>
+                <div><input type="checkbox" name="" value="">  <span>DD 1 TB</span></div>
+                <div><input type="checkbox" name="" value="">  <span>DDS 128 GB</span></div>
+                <div><input type="checkbox" name="" value="">  <span>DDS 128 GB</span></div>
+                <div><input type="checkbox" name="" value="">  <span>DDS 256 GB</span></div>
+                <div><input type="checkbox" name="" value="">  <span>DDS 512 GB</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="row mb-3 p-3 border border-primary">
+          <div class="col">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="img-fluid ml-5"src="img/hp.jpg" alt="" width="200px">
+              </div>
+              <div class="col-md-4">
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum sit.</p>
+                <p>Lorem ipsum.</p>
+              </div>
+              <div class="col-md-3">
+                <h4>Precio</h4>
+                <h3>s/1899.90</h3>
+                <a class=" btn btn-primary btn-sm border-radius-3" type="button" name="button"> AÑADIR AL CARRITO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 p-3 border border-primary">
+          <div class="col">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="img-fluid ml-5"src="img/hp.jpg" alt="" width="200px">
+              </div>
+              <div class="col-md-4">
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum sit.</p>
+                <p>Lorem ipsum.</p>
+              </div>
+              <div class="col-md-3">
+                <h4>Precio</h4>
+                <h3>s/1899.90</h3>
+                <a class=" btn btn-primary btn-sm border-radius-3" type="button" name="button"> AÑADIR AL CARRITO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 p-3 border border-primary">
+          <div class="col">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="img-fluid ml-5"src="img/hp.jpg" alt="" width="200px">
+              </div>
+              <div class="col-md-4">
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum sit.</p>
+                <p>Lorem ipsum.</p>
+              </div>
+              <div class="col-md-3">
+                <h4>Precio</h4>
+                <h3>s/1899.90</h3>
+                <a class=" btn btn-primary btn-sm border-radius-3" type="button" name="button"> AÑADIR AL CARRITO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 p-3 border border-primary">
+          <div class="col">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="img-fluid ml-5"src="img/hp.jpg" alt="" width="200px">
+              </div>
+              <div class="col-md-4">
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum sit.</p>
+                <p>Lorem ipsum.</p>
+              </div>
+              <div class="col-md-3">
+                <h4>Precio</h4>
+                <h3>s/1899.90</h3>
+                <a class=" btn btn-primary btn-sm border-radius-3" type="button" name="button"> AÑADIR AL CARRITO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 p-3 border border-primary">
+          <div class="col">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="img-fluid ml-5"src="img/hp.jpg" alt="" width="200px">
+              </div>
+              <div class="col-md-4">
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum sit.</p>
+                <p>Lorem ipsum.</p>
+              </div>
+              <div class="col-md-3">
+                <h4>Precio</h4>
+                <h3>s/1899.90</h3>
+                <a class=" btn btn-primary btn-sm border-radius-3" type="button" name="button"> AÑADIR AL CARRITO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+<footer class="pt-5">
+  <div class="container-fluid bg-dark mt-5 py-5 ">
+    <div class="container py-5 text-center">
+      <div class="row text-white bg-dark justify-content-between">
+        <div class="col-3 ">
+          <h6 class="mb-4">SERVICIO AL CLIENTE</h6>
+          <a href="" class="d-block text-white">Preguntas frecuentes</a>
+          <a href=""class="d-block text-white">Tiempos y costos de envío</a>
+          <a href=""class="d-block text-white">Política de privacidad</a>
+        </div>
+        <div class="col-3 d-block">
+          <h6 class="mb-4">NOSOTROS</h6>
+          <a href=""class="d-block text-white">Nuestra empresa</a>
+          <a href=""class="d-block text-white">Venta empresa</a>
+          <a href=""class="d-block text-white">Proveedores</a>
+          <a href=""class="d-block text-white">Trabaja con nosotros</a>
+          <a href=""class="d-block text-white">Políticas internas</a>
+        </div>
+        <div class="col-3 d-block">
+          <h6 class="mb-4">EMPRESA Y MÁS</h6>
+          <a href=""class="d-block text-white">Banco Tienda</a>
+          <a href=""class="d-block text-white">Seguros Tienda</a>
+          <a href=""class="d-block text-white">Viajes Tienda</a>
+          <a href=""class="d-block text-white">Tiendas y más</a>
+        </div>
+        <div class="col-3 d-block">
+          <h6 class="mb-4">LIBRO DE RECLAMACIONES</h6>
+          <a href=""class="d-block text-white">Ingresa al libro aquí</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
