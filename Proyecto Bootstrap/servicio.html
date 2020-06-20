@@ -9,6 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Regístrate</title>
 </head>
@@ -44,7 +47,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand"href="">Nav</a>
+    <a class="navbar-brand"href="index.html">Nav</a>
 
         <div class="collapse navbar-collapse mr-md-3" id="navbarSupportedContent">
           <div class="d-flex">
@@ -100,6 +103,45 @@
       </nav>
   </div>
 
+  <div class="container mt-4">
+    <h2 class="mt-5 font-weight-bold">Solicitud para servicio de soporte técnico</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form role="form" method="post" class="m-4">
+          <div class="form-group">
+            <label class="lead"for="name">Nombre:</label>
+            <input type="name" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label class="lead"for="email">Email:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label class="lead"for="pwd">Teléfono:</label>
+            <input type="text" class="form-control" id="pwd">
+          </div>
+          <div class="form-group">
+            <label class="lead"for="pwd">Descripción del problema:</label>
+            <input type="text" class="form-control" id="pwd">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input lead" type="checkbox" id="gridCheck">
+              <label class="form-check-label lead" for="gridCheck">
+                ¿Compro el producto en nuestra tienda online?
+              </label>
+            </div>
+          </div>
+          <div class="form-group mt-4">
+            <button class="btn btn-primary btn-block"type="button" name="button">ENVIAR SOLICITUD</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <img src="img/formulario.jpg" alt="" class="img-fluid pt-5 ">
+      </div>
+    </div>
+  </div>
 
 <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -110,6 +152,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 <footer class="pt-5">
