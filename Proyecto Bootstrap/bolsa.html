@@ -18,7 +18,7 @@
 
 <body>
   <div class="container-fluid bg-primary d-none d-md-block d-lg-block">
-    <nav class="navbar navbar-expand-md navbar-primary bg-primary ">
+    <nav class="navbar navbar-expand-md navbar-primary bg-primary shadow-none ">
         <div class="collapse navbar-collapse container">
 
 
@@ -40,14 +40,13 @@
     </nav>
   </div>
 
-
   <div class="container-fluid bg-dark sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container shadow-none">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand"href="index.html">Nav</a>
+    <a class="navbar-brand"href="">Nav</a>
 
         <div class="collapse navbar-collapse mr-md-3" id="navbarSupportedContent">
           <div class="d-flex">
@@ -102,87 +101,172 @@
         </div>
       </nav>
   </div>
+
+  <div class="container mt-5">
+    <h2 class="mb-5">Bolsa de compras</h2>
+    <section class="section-content padding-y">
+<div class="container">
+
+<div class="row">
+	<main class="col-md-9">
+<div class="card">
+
+<table class="table table-borderless table-shopping-cart">
+<thead class="text-muted">
+<tr class="small text-uppercase">
+  <th scope="col">Producto</th>
+  <th scope="col" width="120">Cantidad</th>
+  <th scope="col" width="120">Precio</th>
+  <th scope="col" class="text-right" width="200"> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<figure class="itemside">
+			<div class="aside"><img src="images/items/1.jpg" class="img-sm"></div>
+			<figcaption class="info">
+				<a href="#" class="title text-dark">Lorem ipsum dolor sit amet.</a>
+				<p class="text-muted small">Descripcion producto 1 <br> Lorem 2</p>
+			</figcaption>
+		</figure>
+	</td>
+	<td>
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+	</td>
+	<td>
+		<div class="price-wrap">
+			<var class="price">s/1000</var>
+			<small class="text-muted"> S1000</small>
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td class="text-right">
+	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a>
+	<a href="" class="btn btn-light"> Remover</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<figure class="itemside">
+			<div class="aside"><img src="images/items/2.jpg" class="img-sm"></div>
+			<figcaption class="info">
+        <a href="#" class="title text-dark">Lorem ipsum dolor sit amet.</a>
+				<p class="text-muted small">Descripcion producto 1 <br> Lorem 2</p>
+			</figcaption>
+		</figure>
+	</td>
+	<td>
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+	</td>
+	<td>
+		<div class="price-wrap">
+      <var class="price">s/1000</var>
+			<small class="text-muted"> S1000</small>
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td class="text-right">
+	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a>
+	<a href="" class="btn btn-light btn-round"> Remover</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<figure class="itemside">
+			<div class="aside"><img src="images/items/3.jpg" class="img-sm"></div>
+			<figcaption class="info">
+        <a href="#" class="title text-dark">Lorem ipsum dolor sit amet.</a>
+				<p class="text-muted small">Descripcion producto 1 <br> Lorem 2</p>
+			</figcaption>
+		</figure>
+	</td>
+	<td>
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+	</td>
+	<td>
+		<div class="price-wrap">
+      <var class="price">s/1000</var>
+			<small class="text-muted"> S1000</small>
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td class="text-right">
+		<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a>
+		<a href="" class="btn btn-light btn-round"> Remove</a>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="card-body border-top">
+	<a href="#" class="btn btn-primary float-md-right"> Hacer compra <i class="fa fa-chevron-right"></i> </a>
+	<a href="#" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continuar comprando</a>
+</div>
+</div> <!-- card.// -->
+
+<div class="alert alert-success mt-3">
+	<p class="icontext"><i class="icon text-success fa fa-truck"></i> DELIVERY GRATUITO EN DOS SEMANAS</p>
+</div>
+
+	</main> <!-- col.// -->
+	<aside class="col-md-3">
+		<div class="card mb-3">
+			<div class="card-body">
+			<form>
+				<div class="form-group">
+					<label>Tienes un cupón</label>
+					<div class="input-group">
+						<input type="text" class="form-control" name="" placeholder="Coupon code">
+						<span class="input-group-append">
+							<button class="btn btn-primary">Aplicar</button>
+						</span>
+					</div>
+				</div>
+			</form>
+			</div> <!-- card-body.// -->
+		</div>  <!-- card .// -->
+		<div class="card">
+			<div class="card-body">
+					<dl class="dlist-align">
+					  <dt>Precio Total:</dt>
+					  <dd class="text-right">SOLES S/100</dd>
+					</dl>
+					<dl class="dlist-align">
+					  <dt>Discount:</dt>
+					  <dd class="text-right">SOLES S/100</dd>
+					</dl>
+					<dl class="dlist-align">
+					  <dt>Total:</dt>
+					  <dd class="text-right  h5"><strong>%200</strong></dd>
+					</dl>
+					<hr>
+					<p class="text-center mb-3">
+						<img src="images/misc/payments.png" height="26">
+					</p>
+
+			</div> <!-- card-body.// -->
+		</div>  <!-- card .// -->
+	</aside> <!-- col.// -->
+</div>
+
+</div> <!-- container .//  -->
+</section>
+
   </div>
 
-  <div class="container-fluid bg-blue-gradient pt-3"id="">
-    <div class="row justify-content-center mt-0">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
-            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2><strong>Sign Up Your User Account</strong></h2>
-                <p>Fill all form field to go to next step</p>
-                <div class="row">
-                    <div class="col-md-12 mx-0">
-                        <form id="msform">
-                            <!-- progressbar -->
-                            <ul id="progressbar">
-                                <li class="active" id="account"><strong>Account</strong></li>
-                                <li id="personal"><strong>Personal</strong></li>
-                                <li id="payment"><strong>Payment</strong></li>
-                                <li id="confirm"><strong>Finish</strong></li>
-                            </ul> <!-- fieldsets -->
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Account Information</h2> <input type="email" name="email" placeholder="Email Id" /> <input type="text" name="uname" placeholder="UserName" /> <input type="password" name="pwd" placeholder="Password" /> <input type="password" name="cpwd" placeholder="Confirm Password" />
-                                </div> <input type="button" name="next" class="next action-button" value="Next Step" />
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Personal Information</h2> <input type="text" name="fname" placeholder="First Name" /> <input type="text" name="lname" placeholder="Last Name" /> <input type="text" name="phno" placeholder="Contact No." /> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
-                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next Step" />
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Payment Information</h2>
-                                    <div class="radio-group">
-                                        <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px"></div>
-                                        <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px"></div> <br>
-                                    </div> <label class="pay">Card Holder Name*</label> <input type="text" name="holdername" placeholder="" />
-                                    <div class="row">
-                                        <div class="col-9"> <label class="pay">Card Number*</label> <input type="text" name="cardno" placeholder="" /> </div>
-                                        <div class="col-3"> <label class="pay">CVC*</label> <input type="password" name="cvcpwd" placeholder="***" /> </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3"> <label class="pay">Expiry Date*</label> </div>
-                                        <div class="col-9"> <select class="list-dt" id="month" name="expmonth">
-                                                <option selected>Month</option>
-                                                <option>January</option>
-                                                <option>February</option>
-                                                <option>March</option>
-                                                <option>April</option>
-                                                <option>May</option>
-                                                <option>June</option>
-                                                <option>July</option>
-                                                <option>August</option>
-                                                <option>September</option>
-                                                <option>October</option>
-                                                <option>November</option>
-                                                <option>December</option>
-                                            </select> <select class="list-dt" id="year" name="expyear">
-                                                <option selected>Year</option>
-                                            </select> </div>
-                                    </div>
-                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="make_payment" class="next action-button" value="Confirm" />
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
-                                    </div> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-7 text-center">
-                                            <h5>You Have Successfully Signed Up</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
+
 
 
 
@@ -200,81 +284,10 @@
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
 
-  <script type="text/javascript">
-  $(document).ready(function(){
-
-var current_fs, next_fs, previous_fs; //fieldsets
-var opacity;
-
-$(".next").click(function(){
-
-current_fs = $(this).parent();
-next_fs = $(this).parent().next();
-
-//Add Class Active
-$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-//show the next fieldset
-next_fs.show();
-//hide the current fieldset with style
-current_fs.animate({opacity: 0}, {
-step: function(now) {
-// for making fielset appear animation
-opacity = 1 - now;
-
-current_fs.css({
-'display': 'none',
-'position': 'relative'
-});
-next_fs.css({'opacity': opacity});
-},
-duration: 600
-});
-});
-
-$(".previous").click(function(){
-
-current_fs = $(this).parent();
-previous_fs = $(this).parent().prev();
-
-//Remove class active
-$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-//show the previous fieldset
-previous_fs.show();
-
-//hide the current fieldset with style
-current_fs.animate({opacity: 0}, {
-step: function(now) {
-// for making fielset appear animation
-opacity = 1 - now;
-
-current_fs.css({
-'display': 'none',
-'position': 'relative'
-});
-previous_fs.css({'opacity': opacity});
-},
-duration: 600
-});
-});
-
-$('.radio-group .radio').click(function(){
-$(this).parent().find('.radio').removeClass('selected');
-$(this).addClass('selected');
-});
-
-$(".submit").click(function(){
-return false;
-})
-
-});
-  </script>
-
 </body>
 
 <footer class="pt-5">
-  <div class="container-fluid bg-dark mt-5 py-5 ">
+  <div class="container-fluid bg-dark mt-5 py-5 d-none d-md-block">
     <div class="container py-5 text-center">
       <div class="row text-white bg-dark justify-content-between">
         <div class="col-3 ">
@@ -301,6 +314,79 @@ return false;
         <div class="col-3 d-block">
           <h6 class="mb-4">LIBRO DE RECLAMACIONES</h6>
           <a href=""class="d-block text-white">Ingresa al libro aquí</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-dark mt-5 py-5 d-md-none d-block">
+    <div class="container">
+      <div class="accordion bg-dark" id="accordionExample">
+        <div class="card bg-dark">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed  text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                SERVICIO AL CLIENTE
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body ml-5">
+              <a href="" class="d-block text-white">Preguntas frecuentes</a>
+              <a href=""class="d-block text-white">Tiempos y costos de envío</a>
+              <a href=""class="d-block text-white">Política de privacidad</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                NOSOTROS
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body ml-5">
+              <a href=""class="d-block text-white">Nuestra empresa</a>
+              <a href=""class="d-block text-white">Venta empresa</a>
+              <a href=""class="d-block text-white">Proveedores</a>
+              <a href=""class="d-block text-white">Trabaja con nosotros</a>
+              <a href=""class="d-block text-white">Políticas internas</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed  text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                EMPRESA Y MÁS
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body ml-5">
+              <a href=""class="d-block text-white">Banco Tienda</a>
+              <a href=""class="d-block text-white">Seguros Tienda</a>
+              <a href=""class="d-block text-white">Viajes Tienda</a>
+              <a href=""class="d-block text-white">Tiendas y más</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed  text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                LIBRO DE RECLAMACIONES
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body ml-5">
+              <a href=""class="d-block text-white">Ingresa al libro aquí</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
