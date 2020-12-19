@@ -301,13 +301,45 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="api/api.js"></script>
+  <script type="text/javascript">
+
+      function cargar_lista_periodos()
+      {
+              var oEvaluacion = {
+                  type: "POST",
+                  url: "https://academico.isur.edu.pe/IsurTutorias//contenidos/buscar_tutoriado.aspx/ListaPeriodos",
+                  data: null,
+                  contentType: "application/json; charset=utf-8",
+                  dataType: "text json",
+                  async: false,
+                  success: function (r) {
+                      if (r.d == null) { return; }
+                      var fichas = r.d.Resultado;
+                      if (fichas.length > 0) {
+                          for (var i = 0; i < fichas.length; i++) {
+                              $('#sel_periodos').append('<option value="' + fichas[i].ID_PERIOD + '">' + fichas[i].NOMBRE_PERIODO + '</option>');
+                          }
+                          $('#sel_periodos').val(fichas[0].ID_PERIOD).change();
+                      }
+                  },
+                  error: function (XMLHttpRequest, textStatus, errorThrown) {
+                      alert(textStatus + ": " + XMLHttpRequest.responseText);
+                  }
+              };
+              $.ajax(oEvaluacion);
+      }
+  </script>
+
   <script type="text/javascript">
     $( document ).ready(function() {
+    cargar_lista_periodos();
     new WOW().init();
     });
   </script>
